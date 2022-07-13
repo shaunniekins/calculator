@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/cd6b3e1f8f.js" crossorigin="anonymous"></script>
     <script src="./js/main.js" defer></script>
     <title>Basic Calculator</title>
 </head>
 <body>
     <div class="calculator-grid">
         <div class="screen">
-            <div data-previous class="previous">0</div>
-            <div data-current class="current"></div>
+            <div data-previous class="previous"></div>
+            <div data-current class="current">0</div>
         </div>
         <button data-all-clear class="span-two">AC</button>
         <button data-clear>Clear</button>
@@ -30,8 +31,21 @@
         <button data-number value=3>3</button>
         <button data-operation>*</button>
         <button data-number value=0>0</button>
-        <button data-number>.</button>
+        <button id="pointBtn">.</button>
         <button data-equal class="span-two">=</button>
     </div>
+
+    <footer class="footer">
+        <p>
+          Copyright ©
+          <script>
+            document.write(new Date().getFullYear())
+          </script>
+          <a href="https://github.com/shaunniekins" target="_blank">
+              shaunniekins
+            <i class="fab fa-github"></i>
+          </a>
+        </p>
+    </footer>
 </body>
 </html>
